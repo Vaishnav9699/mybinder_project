@@ -33,7 +33,8 @@ Make sure you have these installed before moving forward:
 
 ### Setup & Installation
 
-1. **Clone the repo:**
-   ```bash
+1. Clone the repo:
+   bash this in your terminal any where 
    git clone [https://github.com/Vaishnav/antigravity-ai-clipper.git](https://github.com/Vaishnav/antigravity-ai-clipper.git)
    cd antigravity-ai-clipper
+   
