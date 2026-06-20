@@ -37,4 +37,43 @@ Make sure you have these installed before moving forward:
    bash this in your terminal any where 
    git clone [https://github.com/Vaishnav/antigravity-ai-clipper.git](https://github.com/Vaishnav/antigravity-ai-clipper.git)
    cd antigravity-ai-clipper
-   
+   Install dependencies:
+
+Bash
+npm install
+Set up your environment variables:
+Create a .env file in the root directory and add your keys.
+
+Code snippet
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_public_key
+GEMINI_API_KEY=your_gemini_3.1_flash_api_key
+Run the local dev server:
+
+Bash
+npm run dev
+Open http://localhost:3000 in your browser to see the application.
+
+Running with Docker
+To run the entire processing pipeline inside a fully isolated environment without installing video dependencies locally:
+
+Build the image:
+
+Bash
+docker build -t antigravity-clipper .
+Run the container:
+
+Bash
+docker run -p 3000:3000 --env-file .env antigravity-clipper
+How to Contribute
+If you find a bug or have an idea for an optimization, feel free to open an issue or submit a pull request:
+
+Fork the project.
+
+Create your feature branch (git checkout -b feature/AmazingFeature).
+
+Commit your changes (git commit -m 'Add some AmazingFeature').
+
+Push to the branch (git push origin feature/AmazingFeature).
+
+Open a Pull Request.
